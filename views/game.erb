@@ -2,9 +2,8 @@ The word to guess is <br>
 <%= display_word.join(" ") %> <br>
 
 <p><%= message %><br>
-<% if wrong_guesses_count == 1 %>
-<br><p> You only have <%=wrong_guesses_count%> wrong guess!
-<% else %>
+<% if wrong_guesses_count == 0 %>
+<% elsif wrong_guesses_count == 1 %>
 <p> You have <%=wrong_guesses_count%> wrong guesses!
 <% end %>
 
